@@ -1,11 +1,65 @@
-House Price Prediction
+# House Price Prediction 🏠📈
 
-The House Price Prediction project focuses on building a machine learning model that can accurately estimate the selling price of residential homes based on a variety of structural and property-related features. Predicting house prices is a classic regression problem widely used in the real estate industry, property valuation, and investment analysis. This project uses the popular Kaggle House Prices Advanced Regression Techniques dataset, which contains comprehensive housing information with over 70+ attributes describing the physical characteristics and quality of each property.
+A Machine Learning regression project that predicts house prices using the **Linear Regression** algorithm.
 
-The primary objective of the project is to explore how different features—such as living area, number of rooms, and overall material quality—affect the final sale price of a house. Before training the model, the dataset undergoes several preprocessing steps including handling missing values, encoding categorical variables, and selecting meaningful numeric features. Categorical columns such as neighborhood or house style are transformed using label encoding, while missing values in numerical fields are filled using median values to ensure consistency.
+---
 
-Once preprocessing is complete, a Linear Regression model is trained on selected key features such as Overall Quality, GrLivArea (above-ground living area), and Total Rooms Above Ground. Linear Regression is chosen due to its interpretability and ability to identify linear relationships between features and price. After training, the model's performance is evaluated using the Root Mean Squared Error (RMSE) and R² Score, which indicate how well the model generalizes to unseen data.
+## 📌 Project Overview
+This project focuses on predicting house prices based on various numerical and categorical features. It demonstrates a complete Machine Learning workflow using **only Linear Regression**, including data preprocessing, model training, and evaluation.
 
-To make the analysis more insightful, the project also includes a set of visualizations that illustrate how individual features correlate with sale price. Scatter plots such as "Overall Quality vs SalePrice" and "Living Area vs SalePrice" clearly show strong positive correlations, highlighting the most influential characteristics affecting house value. These visual patterns not only support the modeling process but also help explain feature importance to non-technical users.
+The project helps understand how basic regression techniques can be applied to real-world problems such as real estate price estimation.
 
-This project demonstrates a complete end-to-end workflow of a supervised regression task, covering data loading, cleaning, feature engineering, model development, evaluation, and visualization. It serves as a comprehensive example for beginners and an excellent portfolio project for internships, showcasing both technical machine learning skills and the ability to communicate insights effectively.
+---
+
+## 📊 Dataset
+- **Dataset Name:** House Prices – Advanced Regression Techniques  
+- **Source:** Kaggle  
+- The dataset contains residential housing features such as overall quality, living area, number of rooms, and year built.
+
+---
+
+## 🛠️ Technologies Used
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Jupyter Notebook  
+
+---
+
+## 🔍 Project Workflow
+1. Loading and exploring the dataset  
+2. Handling missing values  
+3. Selecting relevant features  
+4. Splitting data into training and testing sets  
+5. Training the model using **Linear Regression**  
+6. Evaluating the model using regression metrics  
+
+---
+
+## 📈 Model Output & Performance
+The Linear Regression model produced the following results:
+
+- **Root Mean Squared Error (RMSE):** `51405.09`  
+- **R² Score:** `0.655`
+
+The model explains approximately **65.5% of the variance** in house prices, making it a reliable baseline regression model.
+
+---
+
+## 🚀 Future Improvements
+- Improve feature selection to enhance Linear Regression performance  
+- Handle outliers more effectively  
+- Normalize or scale features  
+- Compare Linear Regression results with advanced regression models  
+
+---
+
+## 👩‍💻 Author
+**Keerthana Dharmaraj**  
+GitHub: https://github.com/keerthukaviya29
+
+---
+
+## 📜 License
+This project is created for learning and educational purposes.
