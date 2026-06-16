@@ -1,65 +1,132 @@
-# House Price Prediction 🏠📈
+<div align="center">
 
-A Machine Learning regression project that predicts house prices using the **Linear Regression** algorithm.
+# 🏠 House Price Prediction
 
----
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
 
-## 📌 Project Overview
-This project focuses on predicting house prices based on various numerical and categorical features. It demonstrates a complete Machine Learning workflow using **only Linear Regression**, including data preprocessing, model training, and evaluation.
+> **Can we predict the price of a house from its features alone?**
+> A regression project using Linear Regression — with real Kaggle data and measurable results.
 
-The project helps understand how basic regression techniques can be applied to real-world problems such as real estate price estimation.
-
----
-
-## 📊 Dataset
-- **Dataset Name:** House Prices – Advanced Regression Techniques  
-- **Source:** Kaggle  
-- The dataset contains residential housing features such as overall quality, living area, number of rooms, and year built.
+</div>
 
 ---
 
-## 🛠️ Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Jupyter Notebook  
+## 📌 Problem Statement
+
+Real estate pricing is complex — influenced by location, size, quality, age, and dozens of other factors. This project uses the **Kaggle House Prices dataset** to build a regression model that estimates residential property prices from numerical and categorical features, demonstrating a complete ML workflow from raw data to evaluation.
 
 ---
 
-## 🔍 Project Workflow
-1. Loading and exploring the dataset  
-2. Handling missing values  
-3. Selecting relevant features  
-4. Splitting data into training and testing sets  
-5. Training the model using **Linear Regression**  
-6. Evaluating the model using regression metrics  
+## 🎯 Project Highlights
+
+| What | Detail |
+|------|--------|
+| 🧠 Algorithm | Linear Regression |
+| 📦 Dataset | House Prices — Advanced Regression Techniques (Kaggle) |
+| 🎯 Target | Sale Price (continuous value) |
+| 📊 Key Features | Overall Quality, Living Area, Rooms, Year Built, and more |
+| 📉 RMSE | 51,405.09 |
+| 📈 R² Score | 0.655 (65.5% variance explained) |
 
 ---
 
-## 📈 Model Output & Performance
-The Linear Regression model produced the following results:
+## 🗂️ Project Structure
 
-- **Root Mean Squared Error (RMSE):** `51405.09`  
-- **R² Score:** `0.655`
-
-The model explains approximately **65.5% of the variance** in house prices, making it a reliable baseline regression model.
-
----
-
-## 🚀 Future Improvements
-- Improve feature selection to enhance Linear Regression performance  
-- Handle outliers more effectively  
-- Normalize or scale features  
-- Compare Linear Regression results with advanced regression models  
+```
+house-price-prediction/
+│
+├── house_price_prediction.ipynb  # Jupyter Notebook — full regression pipeline
+├── requirements.txt              # Dependencies
+├── images/                       # Visualization outputs
+└── README.md
+```
 
 ---
 
-## 👩‍💻 Author
-**Keerthana Dharmaraj**  
-GitHub: https://github.com/keerthukaviya29
+## 🔄 ML Pipeline
+
+```
+Load Data  →  EDA  →  Handle Missing Values  →  Feature Selection  →  Train Model  →  Evaluate
+```
+
+**Step-by-step:**
+
+1. **Load Data** — Kaggle House Prices dataset
+2. **EDA** — Explore features, distributions, correlations
+3. **Handle Missing Values** — Drop or impute based on feature type
+4. **Feature Selection** — Pick most relevant numerical and categorical features
+5. **Train/Test Split** — Split for unbiased evaluation
+6. **Train Model** — Linear Regression via Scikit-learn
+7. **Evaluate** — RMSE and R² Score
 
 ---
 
-## 📜 License
-This project is created for learning and educational purposes.
+## 📊 Key Findings
+
+- 🏗️ **Overall Quality** is the single strongest predictor of sale price
+- 📐 **Ground living area (GrLivArea)** has a strong positive linear relationship with price
+- 📅 **Year Built** — newer houses consistently command higher prices
+- 🚗 **Garage capacity** and **basement size** are significant secondary predictors
+
+---
+
+## 📈 Model Performance
+
+| Metric | Score |
+|--------|-------|
+| RMSE | 51,405.09 |
+| R² Score | 0.655 |
+
+> The model explains ~65.5% of variance in house prices — a solid baseline for Linear Regression on this dataset.
+
+---
+
+## ⚙️ How to Run
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/keerthanad29/house-price-prediction.git
+cd house-price-prediction
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Launch Jupyter Notebook
+jupyter notebook house_price_prediction.ipynb
+```
+
+> Dataset: Download from [Kaggle](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data) and place in the project folder.
+
+---
+
+## 📦 Requirements
+
+```
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+```
+
+---
+
+## 💡 What I Learned
+
+- How to handle **real-world messy data** with many missing values
+- Selecting features based on **correlation analysis**
+- Understanding **RMSE vs R²** — what each metric actually tells you
+- Why **Linear Regression** is a critical baseline before trying complex models
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] Try Random Forest / XGBoost for better accuracy
+- [ ] Handle outliers more effectively
+- [ ] Apply feature scaling and normalization
+- [ ] Hyperparameter tuning with GridSearchCV
+- [ ] Deploy as a price estimator web app using Streamlit
